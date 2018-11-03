@@ -13,12 +13,14 @@
     <body>
         <div class="page-header">
             <h1><a href="/">Emilian Blogi</a></h1>
+            <img id="pyy" src="https://images.unsplash.com/photo-1541073166498-8b10d60bd20d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0d304e11019c83a3c0e3d059b502f3a&auto=format&fit=crop&w=600&q=60">
         </div>
             {% for post in posts %}
         <div class="post">
              <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
+            <img id="kahvi" src="https://images.unsplash.com/photo-1541003802905-ffcda6cf1775?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8eb4f42606fe0566eb380db2ec7d537&auto=format&fit=crop&w=600&q=60"
         </div>
             {% endfor %}    
         </div>
